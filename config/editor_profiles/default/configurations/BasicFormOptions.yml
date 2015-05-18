@@ -295,7 +295,7 @@
       - cols: 3
     - - c
       - cols: 2
-    - - "3"
+    - - "8"
       - editor_partial: subfield_material
         cols: 2
     - - e
@@ -309,7 +309,7 @@
     - - a
       - growfield: true
         cols: 8
-    - - "3"
+    - - "8"
       - editor_partial: subfield_material
         cols: 2
     - - b
@@ -324,7 +324,7 @@
       - cols: 4
     - - d
       - cols: 4
-    - - "3"
+    - - "8"
       - editor_partial: subfield_material
         cols: 4
     columns: 4
@@ -334,7 +334,7 @@
     - - a
       - growfield: true
         cols: 8
-    - - "3"
+    - - "8"
       - cols: 2
         editor_partial: subfield_material
     columns: 10
@@ -407,7 +407,7 @@
     - - a
       - growfield: true
         cols: 4
-    - - "3"
+    - - "8"
       - cols: 1
         editor_partial: subfield_material
     - - b
@@ -419,7 +419,7 @@
     fields: 
     - - a
       - cols: 4
-    - - "3"
+    - - "8"
       - cols: 1
         editor_partial: subfield_material
     columns: 5
@@ -435,7 +435,7 @@
         - Probably autograph
         cols: 4
         editor_partial: subfield_select
-    - - "3"
+    - - "8"
       - cols: 1
         editor_partial: subfield_material
     columns: 5
