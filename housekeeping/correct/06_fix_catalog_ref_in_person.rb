@@ -39,8 +39,8 @@ Person.all.each do |s|
     del<< s
   end
   modified = false
-  puts "OLD MARC ############################## OLD MARC"
-  puts marc
+  #puts "OLD MARC ############################## OLD MARC"
+  #puts marc
   marc.each_by_tag("670") do |t|
     a = t.fetch_first_by_tag("a")
     if a 
@@ -80,10 +80,10 @@ Person.all.each do |s|
   
 
   end
-  puts "NEW MARC ========================================"
-  puts marc
+  #puts "NEW MARC ========================================"
+  #puts marc
   #s.suppress_recreate
-  #s.save if modified
+  s.save if modified
 
 end
 

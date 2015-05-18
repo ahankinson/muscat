@@ -142,10 +142,10 @@
         :foreign_class: Person
         :foreign_field: id
         :no_show: true
-    - - a
-      - :occurances: "?"
-        :foreign_class: ^0
-        :foreign_field: full_name
+                #- - a
+                #- :occurances: "?"
+                #:foreign_class: ^0
+                #:foreign_field: full_name
     - - "9"
       - :occurances: "?"
 # Reference to institutions

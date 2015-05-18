@@ -31,8 +31,8 @@ Person.all.each do |s|
   count=0
   marc = s.marc
   modified = false
-  puts "OLD MARC ############################## OLD MARC"
-  puts marc
+  #puts "OLD MARC ############################## OLD MARC"
+  #puts marc
   marc.each_by_tag("510") do |t|
   counter=0
     a = t.fetch_first_by_tag("a")
@@ -69,8 +69,8 @@ Person.all.each do |s|
   
 
   end
-  puts "NEW MARC ========================================"
-  puts marc
-  #s.save if modified
+  #puts "NEW MARC ========================================"
+  #puts marc
+  s.save if modified
 
 end

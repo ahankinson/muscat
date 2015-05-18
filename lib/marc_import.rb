@@ -52,16 +52,16 @@ class MarcImport
       if marc.is_valid?(false)
         #p marc.get_marc_source_id
         # step 1.  update or create a new object
-        model = Object.const_get(@model).find_by_id( marc.get_id )
+        model = Object.const_get(@model).find_by_id( marc.get_id.parameterize )
         if !model
           status="created"
           if @model=="Catalogue"
-            model = Object.const_get(@model).new(:id => marc.get_id, :name => marc.get_name, :author => marc.get_author, :revue_title=> marc.get_revue_title, :description => marc.get_description, :wf_owner => 1, :wf_stage => "published", :wf_audit => "approved")
+            model = Object.const_get(@model).new(:id => marc.get_id.parameterize, :name => marc.get_name, :author => marc.get_author, :revue_title=> marc.get_revue_title, :description => marc.get_description, :wf_owner => 1, :wf_stage => "published", :wf_audit => "approved")
 
           elsif @model=="Person" || @model =="Institution"
-            model = Object.const_get(@model).new(:id => marc.get_id, :wf_owner => 1, :wf_stage => "published", :wf_audit => "approved")
+            model = Object.const_get(@model).new(:id => marc.get_id.parameterize, :wf_owner => 1, :wf_stage => "published", :wf_audit => "approved")
           elsif @model=="Source"
-            model = Object.const_get(@model).new(:id => marc.get_id, :lib_siglum => marc.get_siglum, :wf_owner => 1, :wf_stage => "published", :wf_audit => "approved")
+            model = Object.const_get(@model).new(:id => marc.get_id.parameterize, :lib_siglum => marc.get_siglum, :wf_owner => 1, :wf_stage => "published", :wf_audit => "approved")
           end
         else
           status="updated"
