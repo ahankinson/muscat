@@ -65,8 +65,9 @@ ActiveAdmin.register Folder do
       row (I18n.t :filter_name) { |r| r.name }
       row (I18n.t :filter_folder_type) { |r| r.folder_type }
     end
-    
-    panel folder.folder_type.pluralize, :class => "muscat_panel"  do
+   
+    if folder.folder_type
+      panel folder.folder_type.pluralize, :class => "muscat_panel"  do
       
       fitems = folder.folder_items
       
@@ -80,7 +81,7 @@ ActiveAdmin.register Folder do
         end
       end
     end
-    
+    end
   end
   
  
