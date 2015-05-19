@@ -21,7 +21,7 @@ ActiveAdmin.register Folder do
       # Look in the saved filters for this controller
       # relative to the folder type of the deleted folder
       # if it was filtered by folder. If it was remove it
-      controller =  object.folder_type.underscore.downcase.pluralize
+      controller =  object.folder_type ? object.folder_type.underscore.downcase.pluralize : object.folder_type
       if session[:last_search_filter] && session[:last_search_filter][controller]
         params_q =  session[:last_search_filter][controller]
         if params_q.include?(:id_with_integer)

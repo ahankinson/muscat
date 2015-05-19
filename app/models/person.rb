@@ -36,7 +36,7 @@ class Person < ActiveRecord::Base
   
   before_destroy :check_dependencies
   
-  #before_save :set_object_fields
+  before_save :set_object_fields
   after_create :scaffold_marc, :fix_ids
   after_save :reindex
   

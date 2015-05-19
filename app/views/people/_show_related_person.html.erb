@@ -13,8 +13,10 @@
 			<%= @editor_profile.get_label(tag.tag) %>
 		<%- end %>
 	</th>
-	<td>
-      <%= link_to a_tag.content+" ["+i_tag.content+"]", ref_tag.content.to_s %>
+    <td>
+      <% if a_tag %>
+        <%= link_to a_tag.content+" ["+i_tag.content+"]", ref_tag.content.to_s %>
+      <% end %>
 	</td>
 </tr>
 

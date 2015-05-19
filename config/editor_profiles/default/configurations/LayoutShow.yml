@@ -30,6 +30,7 @@ groups:
     template: marc_show/show_details
     all_tag_templates: 
       "260": marc_show/show_subfield_concat
+      "300": marc_show/show_subfield_concat
   show_content: 
     all_tags: 
     - "031"
