@@ -329,6 +329,7 @@ class Marc
       if subtag_content.empty? && !child.fetch_first_by_tag( subtag )
         tags << child
       elsif child.fetch_first_by_tag( subtag ) && child.fetch_first_by_tag( subtag ).content == subtag_content
+        tags << child
       end
       #for grandchild in child.children
       #  tags 

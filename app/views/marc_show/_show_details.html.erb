@@ -22,7 +22,7 @@
                   <%- material_tags = item.marc.by_tags_with_subtag(material & group[:tags], "8", "#{m}\\c") %>
 					<% unless material_tags.empty? -%>
 						<tr class="row">
-							<td colspan="2" style="font-weight:bold"><%= "Material #{m}" %></td>				    
+							<td colspan="2" style="font-variant:small-caps;"><%= "Material #{m}" %></td>				    
 						</tr>
 						<%= render :partial => "marc_show/show_tags", :locals => { :tags => material_tags, :templates => group[:tag_templates] } %>		
 					<% end -%>
