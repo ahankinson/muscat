@@ -1,8 +1,10 @@
 <%- last_tag = "" %>
 <%- tags.each do |tag| %>
 	<% if @editor_profile.show_all? || @item.marc.config.tag_is_browsable?(tag.tag) -%>
-	
-		<% if templates && templates.has_key?(tag.tag ) %>
+      <% if tag.children.empty? %>	
+        <%= render :partial => "marc/show_controlfield", :locals => { :tag => tag } %>
+      <% end %>
+      <% if templates && templates.has_key?(tag.tag ) %>
 			<%= render :partial => templates[tag.tag], :locals => { :tag => tag,	:no_label => (last_tag == tag.tag + "a") } %>
 			<%- last_tag = tag.tag + "a" %>		
 		<% else %>

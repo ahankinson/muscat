@@ -1,0 +1,17 @@
+<tr class="row">
+	<th>
+	  <%= @editor_profile.get_label(tag.tag) %>
+	</th>
+	<td>
+      <% 
+        content=tag.content
+	-%>
+		<% #NEED TO DISCUSS THIS! removed h BUT HTML NOT SANITIZED only for PSMD!!! %>
+		<% if RISM::BASE == "pr" -%>
+	   		<%= content %>
+	   <% else %>
+	   		<%= h content %>
+	   <%- end -%>
+	</td>					    
+</tr>
+

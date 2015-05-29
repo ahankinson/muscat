@@ -183,3 +183,27 @@ administration: !map:ActiveSupport::HashWithIndifferentAccess
     fr: Administration
     de: Administration
     en: Administration
+sigla: !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: SIGLA
+    fr: SIGLA
+    de: Sigel
+    en: Sigla
+contact: !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: CONTACT
+    fr: CONTACT
+    de: Kontakt
+    en: Contact
+identity: !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: IDENTITY
+    fr: IDENTITY
+    de: Identifizierung
+    en: Identity
+description: !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: DESCRIPTION
+    fr: DESCRIPTION
+    de: Beschreibung
+    en: Description

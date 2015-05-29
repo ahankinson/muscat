@@ -5,7 +5,7 @@
   :authors: ["Chad Thatcher", "Sandra Tuppen", "Laurent Pugin", "Rodolfo Zitellini"]
 
 
-# People auth data
+# Institution auth data
 
 :model: institution
 :tags:
@@ -23,21 +23,21 @@
     :zero_padding: "14"
     :fields:
     - - ""
-      - :no_browse: true
+      - :no_browse: false
   "003": 
     :master: ""
     :indicator: "" 
     :occurances: "1"
     :fields:
     - - ""
-      - :no_browse: true
+      - :no_browse: false
   "005": 
     :master: ""
     :indicator: "" 
     :occurances: "1"
     :fields:
     - - ""
-      - :no_browse: true
+      - :no_browse: false
   "008": 
     :master: ""
     :indicator: ""
@@ -45,6 +45,29 @@
     :fields:
     - - ""
       - :no_browse: true
+  "024": 
+    :master: a
+    :indicator: "##"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "*"
+
+  "035": 
+    :master: a
+    :indicator: "##"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "*"
+  "040": 
+    :master: a
+    :indicator: "##"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "*"
+
   "043": 
     :master: c
     :indicator: "##"
@@ -63,6 +86,40 @@
       - :occurances: "?"
     - - g
       - :occurances: "?"
+  "368": 
+    :master: a
+    :indicator: "##"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "*"
+  "371": 
+    :master: a
+    :indicator: "##"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "*"
+    - - e
+      - :occurances: "*"
+    - - b
+      - :occurances: "*"
+    - - c
+      - :occurances: "*"
+    - - d
+      - :occurances: "*"
+    - - m
+      - :occurances: "*"
+    - - u
+      - :occurances: "*"
+  "373": 
+    :master: a
+    :indicator: "##"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "*"
+
   "410": 
     :master: a
     :indicator: "1#"
@@ -70,6 +127,27 @@
     :fields: 
     - - a
       - :occurances: "?"
+  "510": 
+    :master: a
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "?"
+  "580": 
+    :master: "0"
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - "0"
+      - :occurances: "?"
+        :foreign_class: Institution
+        :foreign_field: id
+        :no_show: true
+    - - x
+      - :occurances: "?"
+        :foreign_class: ^0
+        :foreign_field: siglum
   "622": 
     :master: e
     :indicator: "##"
@@ -80,10 +158,56 @@
     - - u
       - :occurances: "?"
         :validation: "^http*"
-  "680": 
-    :master: i
+  "670": 
+    :master: "0"
     :indicator: "1#"
     :occurances: "*"
     :fields: 
-    - - i
+    - - "0"
       - :occurances: "?"
+        :foreign_class: Catalogue
+        :foreign_field: id
+        :no_show: true
+    - - a
+      - :occurances: "?"
+        :foreign_class: ^0
+        :foreign_field: name
+  "678": 
+    :master: a
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "?"
+
+  "680": 
+    :master: a
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "?"
+  "710": 
+    :master: "0"
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - "0"
+      - :occurances: "?"
+        :foreign_class: Institution
+        :foreign_field: id
+        :no_show: true
+    - - a
+      - :occurances: "?"
+        :foreign_class: ^0
+        :foreign_field: siglum
+  "856": 
+    :master: u
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - u
+      - :occurances: "?"
+    - - z
+      - :occurances: "?"
+

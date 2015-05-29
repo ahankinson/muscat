@@ -56,9 +56,22 @@
     show_all: false
     show: true
 
+- :id: DefaultInstitution
+  :name: Institution
+  :model: institution
+  :labels: 
+  - InstitutionBasicLabels
+  :rules: 
+  - BasicCataloguingRules
+  :options: 
+  - InstitutionBasicFormOptions
+  :layout: 
+  - InstitutionLayoutDefault
+  :filter:
+    default: true 
 
-- :id: Institution
-  :name: institution
+- :id: ShowInstitution
+  :name: Institution
   :model: institution
   :labels: 
   - InstitutionBasicLabels
@@ -69,7 +82,6 @@
   :layout: 
   - InstitutionLayoutShow
   :filter:
-    default: true 
     show_all: false
     show: true
 

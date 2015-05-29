@@ -576,7 +576,7 @@
 "700":
   allow_new: true 
   layout:
-    fields: 
+    fields:
     - - a
       - type: person
         cols: 1
