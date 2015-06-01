@@ -55,6 +55,49 @@ doc_templates: !map:ActiveSupport::HashWithIndifferentAccess
     fr: "Date/heure de la dernière transaction"
     de: Datum und Zeit der letzten Transaktion
     en: Date and time of last transaction
+
+"024": !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: Codice ISIL
+    fr: Code ISIL
+    de: ISIL Code
+    en: ISIL Code
+  fields: !map:ActiveSupport::HashWithIndifferentAccess 
+    a: !map:ActiveSupport::HashWithIndifferentAccess 
+      label: !map:ActiveSupport::HashWithIndifferentAccess 
+        it: Codice ISIL
+        fr: Code ISIL
+        de: ISIL Code  
+        en: ISIL Code
+"035": !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: Codice GND
+    fr: Code GND
+    de: GND Code
+    en: GND Code
+  fields: !map:ActiveSupport::HashWithIndifferentAccess 
+    a: !map:ActiveSupport::HashWithIndifferentAccess 
+      label: !map:ActiveSupport::HashWithIndifferentAccess 
+        it: Codice GND
+        fr: Code GND
+        de: GND Code  
+        en: GND Code
+"040": !map:ActiveSupport::HashWithIndifferentAccess 
+  label: !map:ActiveSupport::HashWithIndifferentAccess 
+    it: Sigla
+    fr: Sigla
+    de: Sigel
+    en: Sigla
+  fields: !map:ActiveSupport::HashWithIndifferentAccess 
+    a: !map:ActiveSupport::HashWithIndifferentAccess 
+      label: !map:ActiveSupport::HashWithIndifferentAccess 
+        it: Sigla
+        fr: Sigla
+        de: Sigla
+        en: Sigla
+
+
+
 "043": !map:ActiveSupport::HashWithIndifferentAccess 
   label: !map:ActiveSupport::HashWithIndifferentAccess 
     it: Country code
