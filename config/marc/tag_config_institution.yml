@@ -159,6 +159,13 @@
     - - u
       - :occurances: "?"
         :validation: "^http*"
+  "667": 
+    :master: a
+    :indicator: "1#"
+    :occurances: "*"
+    :fields: 
+    - - a
+      - :occurances: "?"
   "670": 
     :master: "0"
     :indicator: "1#"
