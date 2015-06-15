@@ -37,6 +37,8 @@
     fields: 
     - - a
       - cols: 2
+    - - c
+      - cols: 2
     - - g
       - cols: 2
     columns: 4

@@ -314,8 +314,8 @@ function marc_editor_send_form( source_column, destination_column, form_type, ra
 	//$(form).valid();
 	url = "/admin/" + rails_model + "/marc_editor_save"; ///form.attr("action");
     var marc_id=json_marc["fields"][0]["001"];
-	if ( form_type == 1) {
-		url = "/"+rails_model;
+	if ( form_type == 1 ) {
+		url = "/admin/"+rails_model;
 	}
 	else if ( form_type == 2) {
 		url = "/manuscripts/marc_editor_save_inline";
@@ -344,8 +344,8 @@ function marc_editor_send_form( source_column, destination_column, form_type, ra
 		   $(".autogrow").trigger('update'); // Have them grow again
 		   window.location.reload();
 			*/
-			
-			new_url = data.redirect;
+            new_url = String(window.location.href).replace(/edit$/, "");
+			//new_url = data.redirect;
 			window.onbeforeunload = false;
 			window.location.href = new_url;
 			
