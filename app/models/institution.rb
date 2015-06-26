@@ -200,5 +200,7 @@ class Institution < ActiveRecord::Base
     city = place != nil && !place.empty? ? "#{place}" : ""
     "#{name} #{city}#{sigla}"
   end
+   ransacker :"110c_contains", proc{ |v| } do |parent| end
+   ransacker :"110g_contains", proc{ |v| } do |parent| end
   
 end
