@@ -21,7 +21,7 @@ def change_collection(node)
       subfield=node.xpath("//datafield[@tag='100']/subfield[@code='a']")
       if subfield.text=='Collection'
         node.xpath("//datafield[@tag='100']").remove
-        change_datafield(node, '240', '110')
+        change_datafield(node, '240', '130')
       end
 end
 

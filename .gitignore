@@ -8,3 +8,4 @@ development.log
 /solr/default
 /solr/pids
 log/sunspot-solr-development.log
+public/helpfiles.html
